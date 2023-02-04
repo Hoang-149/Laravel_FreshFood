@@ -1,0 +1,345 @@
+*{
+    font-family: 'Varela Round', sans-serif;
+    margin: O auto;
+    
+}
+
+body{
+    background: #ffffff;
+}
+
+/* Part 1: Header */
+.header{
+    height: 50px;
+    background: #ffe923;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .menu-header ul a{
+    text-decoration: none;
+}
+.header .menu-header ul li{
+    background: #ffe923;
+    border: none;
+    font-weight: 100;
+    color: #216e38;
+}
+
+/* menu header */
+.dropdown_menu_sanpham{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_menu_sanpham_content{
+    display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 99999;
+}
+
+.dropdown_menu_sanpham:hover .dropdown_menu_sanpham_content {
+    display: block;
+}
+
+.dropdown_menu_sanpham:hover .dropdown_menu_sanpham_content .text_content{
+    color: #216e38;
+}
+
+.dropdown_menu_sanpham:hover .dropdown_menu_sanpham_content p:hover .text_content{
+    font-size: 17px;
+    color: #b6b398;
+    font-weight: bolder;
+
+}
+/* input search */
+.header .input-search{
+    position: relative;
+    margin-left: 60px;
+}
+
+.header .input-search .input-group.search{
+    overflow: hidden;
+     border: 1.2px solid #216e38; 
+     background-color: #ffffff; 
+     border-radius: 30px;
+     
+}
+
+.header .input-search .input-group.search .form-control{
+    background: white;
+}
+
+.header .btn_user{
+    position: relative;
+    left: -30px;
+    top: 5px;
+}
+
+
+
+/* Part 2.2.1: Service-left */
+.left-service{
+    margin-top: 100px;
+    width: 320px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: -1px -1px 2px 1px #ccc;
+
+}.left-service li{
+    color: #464444;
+    background-color: transparent;
+}
+.left-service li .iconify.ml-2.mr-5{
+    color: #464444;
+}
+.left-service li:hover .iconify.ml-2.mr-5{
+    color: #216e38;
+}
+.left-service li:hover   {
+    background-color: #f2ff3a;
+    color: #216e38;
+}
+
+
+
+/* Right */
+/* title and button */
+.right_service{
+    width: 800px;
+    margin-top: 90px;
+    margin-left: 15px;
+    background: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.my-profile{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.my-profile button{
+    /* height: 100%; */
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.my-profile-heading{
+    color: #216e38;
+    justify-content: center;
+    align-items: center;
+}
+.my-profile-heading span{
+    width: 50px;
+    height: 50px;
+}
+.my-profile-heading h1 {
+    margin: 5px 0 0 10px;
+    color: #216e38;
+}
+
+
+/*  Item 1 profile-personal */
+
+.profile-personal{
+    display: flex;
+    width: 100%;
+    margin: 30px 0 0 20px;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow:  -1px -1px 1px #ccc, 1px 1px 1px #ccc;
+}
+.personal-avt{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+.personal-avt img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Item 2 profile-personal-name */
+.profile-personal-name{
+    width: 100%;
+    margin: 30px 0 0 20px;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow:  -1px -1px 1px #ccc, 1px 1px 1px #ccc;
+}
+.personal-name-tilte, .personal-name-item{
+    margin-left: 50px;
+    margin-right: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.personal-name-tilte{
+    color: rgb(97, 97, 97);
+}
+.personal-name-tilte p, .personal-name-item p {
+    width: 20%;
+}
+
+/* Item 3 */
+.profile-personal-adress{
+    width: 100%;
+    margin: 30px 0 0 20px;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow:  -1px -1px 1px #ccc, 1px 1px 1px #ccc;
+}
+.personal-adress-tilte, .personal-adress-item{
+    margin-left: 50px;
+    margin-right: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.personal-adress-tilte{
+    color: rgb(97, 97, 97);
+}
+.personal-adress-tilte p, .personal-adress-item p {
+    width: 40%;
+}
+
+
+/* Reponsive content */
+/* Tablet and mobile */
+@media only screen and (max-width: 1200px){
+    .left-service{
+        display: none;
+    }
+    .right_service{
+        width: 100%;
+        margin-left: 0;
+    }
+    .my-profile-heading .iconify{
+        width: 30px;
+        height: 30px;
+    }
+    .my-profile-heading h1 {
+        font-size: 25px;
+    }
+    .my-profile button{
+        padding: 5px 30px;
+        margin-top: 10px;
+    }
+    .personal-information{
+        font-size: 14px;
+    }
+    
+    /* mobile */
+}
+@media only screen and (max-width: 740px) {
+    .profile-personal-name,  .profile-personal-adress{
+        font-size: 14px;
+        display: flex;
+    }
+    .personal-name-tilte, .personal-name-item, .personal-adress-tilte, .personal-adress-item {
+        display: block;
+        width: 50%;
+        margin-left: 0;
+    }
+    .personal-name-tilte p , .personal-name-item p, .personal-adress-tilte p, .personal-adress-item p{
+        width: 100%;
+        height: 40px;
+        
+    }
+}
+
+
+/* Footer */
+.container-fluid.footer{
+    position: relative;
+    /* top: 600px; */
+    margin: auto;
+    background-color: hsl(50,99%,53%);
+    color: #216e38;
+}
+.row.row_footer{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.frame{
+    height: 100%;
+    width: 80%;
+}
+.frame a{
+    color: #216e38;
+    text-decoration: none;
+}
+.logo_footer{
+    width: 60%;
+    height: 150px;
+    object-fit: contain;
+}
+.text-uppercase{
+    margin-top: 20px;
+    font-family: 'Varela Round', sans-serif;
+    color: #216e38;
+    font-size: 20px;
+}
+.text_reset{
+    font-family: 'Varela Round', sans-serif;
+    /* color: #AEB4BE !important; */
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.footer_icon{
+    height: 20px;
+    margin-bottom: 20px;
+}
+.footer_icon a, .footer_icon a:hover  {
+  text-decoration: none;
+  color: #216e38;
+}
+.footer_icon .iconify{
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    /* color: white !important; */
+}
+.footer_icon .iconify:hover{
+    opacity: 0.6;
+}
+
+.contract, .aboutus, .image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .category-list-col{
+        margin : 7px 0;
+    }
+    .category-list-row{
+        margin-top: 0px;
+    }
+    .contract, .aboutus{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .image {
+        display: none;
+    }
+  }
+
